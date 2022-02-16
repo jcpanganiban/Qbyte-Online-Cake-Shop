@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/variables.css" type="text/css" />
+    <link rel="stylesheet" href="../css/navbar.css" type="text/css" />
+    <link rel="stylesheet" href="../css/account.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="navbar">
+          <nav>
+            <ul>
+              <!-- <li>
+                <a href="#" class="toggle-btn">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </a>
+              </li> -->
+              <li class="hamb-menu">
+                <a href="#"><img src="../img/icons/menu-icon.svg" alt="" /></a>
+              </li>
+              <!-- <li class="company-name"><a href="#">QBYTE CAKE SHOP</a></li> -->
+              <li class="company-name"><a href="#">QBYTE CAKE SHOP</a></li>
+
+              <li class="cart-mobile">
+                <a href="#"><img src="../img/icons/cart-icon.svg" alt="" /></a>
+              </li>
+              <div class="push"></div>
+              <li id="links"><a href="#">Order</a></li>
+              <li id="links"><a href="./index copy.html">Products</a></li>
+              <li class="account" id="links"><a href="#">Account</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="bg-img">
+          <div class="hero-header">
+            <h1>Hero Header</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur, magni debitis ut commodi officia porro recusandae
+              accusamus eius nihil atque.
+            </p>
+          </div>
+          <div class="login-signup">
+            <div class="login-signup-btns">
+              <div class="login"><span>Login</span></div>
+              <div class="signup"><span>Sign-Up</span></div>
+
+              <hr id="indicator" />
+            </div>
+            <!-- Login -->
+            <div class="login-signup-container">
+              <form id="LoginForm">
+                <div class="login-form">
+                  <div class="email-address">
+                    <label for="email" class="email">Email Address</label>
+                    <input type="email" name="email" />
+                  </div>
+                  <div class="password">
+                    <label for="password" class="password">Password</label>
+                    <input type="password" name="password" />
+                  </div>
+                  <button type="submit" class="btn">Login</button>
+                  <p>Dont have an account? <a href="#">Forgot Passoword</a></p>
+                </div>
+              </form>
+              <!-- Signup -->
+              <form id="RegForm">
+                <div class="signup-form">
+                  <div class="display-name">
+                    <label for="name" class="name">Name</label>
+                    <input type="name" name="name" id="name" />
+                  </div>
+                  <div class="email-address">
+                    <label for="email" class="email">Email Address</label>
+                    <input type="email" name="email" />
+                  </div>
+                  <div class="contact-number">
+                    <label for="cnumber" class="cnumber">Contact Number</label>
+                    <input type="cnumber" name="cnumber" id="cnumber" />
+                  </div>
+                  <div class="password-div">
+                    <label for="password" class="password">Password</label>
+                    <input type="password" name="password" />
+                  </div>
+                  <div class="confirm-password-div">
+                    <label for="confirm-password" class="confirm-password"
+                      >Confirm Password</label
+                    >
+                    <input
+                      type="confirm-password"
+                      name="confirm-password"
+                      id="confirm-password"
+                    />
+                  </div>
+                  <button type="submit" class="btn">Sign-Up</button>
+                  <br />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+  <script src="../js/account.js"></script>
+</html>

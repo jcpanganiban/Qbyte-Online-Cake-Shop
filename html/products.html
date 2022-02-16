@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qbyte Online Cake Shop</title>
+    <link rel="stylesheet" href="../css/index.css" type="text/css" />
+    <link rel="stylesheet" href="../css/variables.css" type="text/css" />
+    <link rel="stylesheet" href="../css/products.css" type="text/css" />
+    <link rel="stylesheet" href="../css/navbar.css" type="text/css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li class="hamb-menu">
+              <a href="#"><img src="../img/icons/menu-icon.svg" alt="" /></a>
+            </li>
+            <!-- <li class="company-name"><a href="#">QBYTE CAKE SHOP</a></li> -->
+            <li class="company-name"><a href="#">QBYTE CAKE SHOP</a></li>
+
+            <li class="cart-mobile">
+              <a href="#"><img src="../img/icons/cart-icon.svg" alt="" /></a>
+            </li>
+            <div class="push"></div>
+            <li id="links"><a href="#">Order</a></li>
+            <li id="links"><a href="./index copy.html">Products</a></li>
+            <li class="account" id="links"><a href="#">Account</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="cart">
+        <div class="uppercart">
+          <h1 class="cartheader">Your Cart</h1>
+          <p><i>We're here to sweeten your day!</i></p>
+        </div>
+
+        <!-- <div class="line"></div> -->
+        <div class="lowercart">Your orders are displayed here...</div>
+      </div>
+      <div class="main">
+        <h1 class="openning">Products We Offer...</h1>
+        <div class="product-list">
+          <h1 class="product-header">Cheesecake Truffles</h1>
+          <div class="wline"></div>
+          <br />
+
+          <ul class="product-card">
+            <li class="products">
+              <div class="productnamedesc">
+                <h1 class="product-name">Silvanas Gems 6pc</h1>
+
+                <h5 class="clear">6 pieces Assorted Cheesecake Truffles</h5>
+              </div>
+
+              <div>
+                <img
+                  class="product-pic"
+                  src="../img/Cheesecake Truffles/truffles assorted.jpg"
+                  alt="Cheesecake Truffles"
+                />
+              </div>
+              <div class="productdescorder">
+                <p>
+                  6 pcs Meringue kisses coated with classic French buttercream
+                  rolled in flavored cake or cookie crumbs. "Oreo, Matcha, Ube,
+                  Red Velvet, Buttermilk, Graham, Chocolate, Butternut"
+                </p>
+              </div>
+              <button class="order-btn" onclick="addToCart(0)">
+                ADD TO CART
+              </button>
+            </li>
+
+            <li class="products">
+              <div class="productnamedesc">
+                <h1 class="product-name">Silvanas Gems 20pc</h1>
+
+                <h5 class="clear">20 pieces Assorted Cheesecake Truffles</h5>
+              </div>
+
+              <div>
+                <img
+                  class="product-pic"
+                  src="../img/Cheesecake Truffles/truffles assorted1.jpg"
+                  alt="Cheesecake Truffles"
+                />
+              </div>
+              <div class="productdescorder">
+                <p>
+                  20 pcs Meringue kisses coated with classic French buttercream
+                  rolled in flavored cake or cookie crumbs. "Oreo, Matcha, Ube,
+                  Red Velvet, Buttermilk, Graham, Chocolate, Butternut"
+                </p>
+              </div>
+              <button class="order-btn" onclick="addToCart(1)">
+                ADD TO CART
+              </button>
+            </li>
+
+            <li class="products">
+              <div class="productnamedesc">
+                <h1 class="product-name">Silvanas Gems 25Pc</h1>
+
+                <h5 class="clear">25 pieces Assorted Cheesecake Truffles</h5>
+              </div>
+
+              <div>
+                <img
+                  class="product-pic"
+                  src="../img/Cheesecake Truffles/truffles assorted2.jpg"
+                  alt="Cheesecake Truffles"
+                />
+              </div>
+              <div class="productdescorder">
+                <p>
+                  25 Pcs Meringue kisses coated with classic french buttercream
+                  rolled in flavored cake cookie crumbs. oreo, matcha, ube, red
+                  velvet, buttermilk, graham, chocolate, butternut
+                </p>
+              </div>
+              <button class="order-btn" onclick="addToCart(2)">
+                ADD TO CART
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+  </body>
+  <script src="../js/products.js"></script>
+</html>
