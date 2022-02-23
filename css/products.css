@@ -24,6 +24,11 @@
   /* background-color: red; */
   padding: 10px;
   margin-bottom: 2vw;
+  /*  */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*  */
 }
 
 ul li {
@@ -154,6 +159,7 @@ ul li {
 }
 
 .order-btn {
+  bottom: 10;
   width: 100%;
   margin: 10px 0;
   border: 1px solid black;
@@ -228,6 +234,10 @@ ul li {
     top: 0;
     right: 0;
     width: 122px;
+    margin: 0;
+  }
+  .picwidth {
+    width: fit-content;
   }
   .productdescorder {
     clear: left;
