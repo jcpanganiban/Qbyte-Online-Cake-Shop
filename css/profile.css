@@ -47,7 +47,7 @@
 
 .container .content .account-content {
   min-width: 80%;
-  height: 80vh;
+  height: 450px;
   /* background: var(--accountPageColor); */
   background: rgba(212, 163, 115, 0.35);
   padding: 2% 2%;
@@ -85,7 +85,7 @@
   margin: 130px 10% 0 10%;
   display: flex;
   justify-content: center;
-  height: 65%;
+  height: 30%;
   width: 80%;
   /* background: black; */
   gap: 20%;
@@ -140,7 +140,7 @@
 
 .bottombutton {
   /* background: black; */
-  margin-top: -40px;
+  /* margin-top: -40px; */
   display: flex;
   justify-content: center;
   gap: 1rem;

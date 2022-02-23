@@ -33,16 +33,9 @@
         <div class="displaycontent">
           <div class="textdisplay">
             <label id="displaylabel">DISPLAY NAME</label>
-            <?php
-              if (isset($_SESSION['useremail'])){
-                echo '<span id="display">'.$_SESSION['username'].'</span>';
-              }
-              else{
-                echo '<span id="display">AWIT LODS</span>';
-              }
-            ?>
-
+            <span id="display">AWIT LODS</span>
           </div>
+
           <button id="edit-name" class="edit-btn">EDIT</button>
         </div>
       </div>
@@ -50,14 +43,7 @@
         <div class="displaycontent">
           <div class="textdisplay">
             <label id="displaylabel">CONTACT NUMBER</label>
-            <?php
-              if (isset($_SESSION['useremail'])){
-                echo '<span id="display">'.$_SESSION['usercontact'].'</span>';
-              }
-              else{
-                echo '<span id="display">AWIT LODS</span>';
-              }
-            ?>
+            <span id="display">AWIT LODS</span>
           </div>
 
           <button id="edit-number" class="edit-btn">EDIT</button>
@@ -67,14 +53,7 @@
         <div class="displaycontent">
           <div class="textdisplay">
             <label id="displaylabel">EMAIL ADDRESS</label>
-            <?php
-              if (isset($_SESSION['useremail'])){
-                echo '<span id="display">'.$_SESSION['useremail'].'</span>';
-              }
-              else{
-                echo '<span id="display">AWIT LODS</span>';
-              }
-            ?>
+            <span id="display">AWIT LODS</span>
           </div>
 
           <button id="edit-email" class="edit-btn">EDIT</button>
@@ -83,13 +62,15 @@
       <div class="display-name">
         <div class="displaycontent">
           <div class="textdisplay">
-            <span id="display">PASSWORD</span>
+            <label id="displaylabel">PASSWORD</label>
+            <span id="display">AWIT LODS</span>
           </div>
 
           <button id="edit-password" class="edit-btn">EDIT</button>
         </div>
       </div>
       <div class="bottombutton">
+        <button id="edit-password" class="edit-btn">Sign Out</button>
         <button id="delete-btn" class="edit-btn">Delete Account</button>
       </div>
     </div>

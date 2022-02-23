@@ -165,7 +165,9 @@ function loginUser($conn, $email, $password){
     // Login the user to the website (using sessions)
     session_start();
     $_SESSION['userid'] = $emailExists['usersId'];
+    $_SESSION['username'] = $emailExists['usersName'];
     $_SESSION['useremail'] = $emailExists['usersEmail'];
+    $_SESSION['usercontact'] = $emailExists['usersContact'];
     header("Location: ../php/index.php");
     exit();
   }
