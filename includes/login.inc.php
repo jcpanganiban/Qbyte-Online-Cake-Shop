@@ -11,7 +11,7 @@ if (isset($_POST['submit'])){
 
   // Empty Input
   if (emptyInputLogin($email, $password) !== false) {
-    header("Location: ../php/account.php?error=emptyinput");
+    header("Location: ../account.php?error=emptyinput");
     exit();
   }
 
@@ -19,6 +19,6 @@ if (isset($_POST['submit'])){
 
 }
 else{
-  header("Location: ../php/account.php");
+  header("Location: ../index.php");
   exit();
 }

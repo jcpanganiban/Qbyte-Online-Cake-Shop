@@ -10,12 +10,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Qbyte Online Cake Shop</title>
-  <link rel="stylesheet" href="../css/variables.css" type="text/css" />
-  <link rel="stylesheet" href="../css/navbar.css" type="text/css" />
-  <link rel="stylesheet" href="../css/index.css" type="text/css" />
+  <link rel="stylesheet" href="./css/variables.css" type="text/css" />
+  <link rel="stylesheet" href="./css/navbar.css" type="text/css" />
+  <link rel="stylesheet" href="./css/index.css" type="text/css" />
 </head>
 <?php
-  include "../header.php";
+  include "./includes/header.inc.php";
 ?>
 <div class="bg-img">
   <div class="hero-header">

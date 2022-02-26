@@ -108,6 +108,33 @@
   align-items: center;
   width: 100%;
 }
+.container
+  .content
+  .account-content
+  .main-content
+  .display-name
+  .displaycontent
+  input {
+  width: 200px;
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.container
+  .content
+  .account-content
+  .main-content
+  .display-name
+  .displaycontent
+  input:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
 .container .content .account-content .main-content .edit-btn {
   /* position: relative; */
   height: 2.5rem;
@@ -136,6 +163,8 @@
 #display {
   font-size: 26px;
   color: var(--mainHeadingColor);
+  background-color: transparent;
+  border: none;
 }
 
 .bottombutton {

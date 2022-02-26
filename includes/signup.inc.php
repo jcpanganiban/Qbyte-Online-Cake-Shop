@@ -14,43 +14,43 @@ if (isset($_POST['submit'])){
   // ERROR HANDLING
   // Empty Input
   if (emptyInputSignup($name, $email, $cnumber, $password, $confirmpassword) !== false) {
-    header("Location: ../php/account.php?error=emptyinput");
+    header("Location: ../account.php?error=emptyinput");
     exit();
   }
   // Improper Name
   if (invalidName($name) !== false) {
-    header("Location: ../php/account.php?error=invalidname");
+    header("Location: ../account.php?error=invalidname");
     exit();
   }
   // Invalid Email
   if (invalidEmail($email) !== false) {
-    header("Location: ../php/account.php?error=invalidemail");
+    header("Location: ../account.php?error=invalidemail");
     exit();
   }
   // Password Mismatch
   if (passwordMatch($password, $confirmpassword) !== false) {
-    header("Location: ../php/account.php?error=passwordmismatch");
+    header("Location: ../account.php?error=passwordmismatch");
     exit();
   }
   // Email Already Exists
   if (emailExists($conn, $email) !== false) {
-    header("Location: ../php/account.php?error=emailexists");
+    header("Location: ../account.php?error=emailexists");
     exit();
   }
   // Contact Number Already Exists
   if (cnumberExists($conn, $cnumber) !== false) {
-    header("Location: ../php/account.php?error=cnumberexists");
+    header("Location: ../account.php?error=cnumberexists");
     exit();
   }
   // Password is longer than 6 characters
   if (pwdLength($password) !== false) {
-    header("Location: ../php/account.php?error=weakpassword");
+    header("Location: ../account.php?error=weakpassword");
     exit();
   }
 
   createUser($conn, $name, $email, $cnumber, $password);
 }
 else{
-  header("Location: ../php/account.php");
+  header("Location: ../index.php");
   exit();
 }

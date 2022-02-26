@@ -48,7 +48,7 @@ function emailExists($conn, $email) {
 
   // Checking if the prepared statement fails
   if (!mysqli_stmt_prepare($stmt, $sql)) {
-    header("Location: ../php/account.php?error=stmtfailed");
+    header("Location: ../account.php?error=stmtfailed");
     exit();
   }
   mysqli_stmt_bind_param($stmt, "s", $email);
@@ -75,7 +75,7 @@ function cnumberExists($conn, $cnumber) {
 
   // Checking if the prepared statement fails
   if (!mysqli_stmt_prepare($stmt, $sql)) {
-    header("Location: ../php/account.php?error=stmtfailed");
+    header("Location: ../account.php?error=stmtfailed");
     exit();
   }
   mysqli_stmt_bind_param($stmt, "s", $cnumber);
@@ -114,7 +114,7 @@ function createUser($conn, $name, $email, $cnumber, $password) {
 
   // Checking if the prepared statement fails
   if (!mysqli_stmt_prepare($stmt, $sql)) {
-    header("Location: ../php/account.php?error=stmtfailed");
+    header("Location: ../account.php?error=stmtfailed");
     exit();
   }
 
@@ -126,7 +126,7 @@ function createUser($conn, $name, $email, $cnumber, $password) {
 
   mysqli_stmt_close($stmt);
 
-  header("Location: ../php/account.php?error=none");
+  header("Location: ../account.php?error=none");
   exit();
 }
 
@@ -148,7 +148,7 @@ function loginUser($conn, $email, $password){
 
   // Checking if emailExists return as false
   if ($emailExists === false){
-    header("Location: ../php/account.php?error=invalidlogin");
+    header("Location: ../account.php?error=invalidlogin");
     exit();
   }
 
@@ -157,7 +157,7 @@ function loginUser($conn, $email, $password){
   $checkPwd = password_verify($password, $hashedPwd);
 
   if ($checkPwd === false){
-    header("Location: ../php/account.php?error=invalidpwd");
+    header("Location: ../account.php?error=invalidpwd");
     exit();
   }
 
@@ -168,7 +168,74 @@ function loginUser($conn, $email, $password){
     $_SESSION['username'] = $emailExists['usersName'];
     $_SESSION['useremail'] = $emailExists['usersEmail'];
     $_SESSION['usercontact'] = $emailExists['usersContact'];
-    header("Location: ../php/index.php");
+    header("Location: ../index.php");
     exit();
   }
+}
+
+// For Reset Page
+
+function emptyInputReset($email) {
+  $result = "";
+  if (empty($email)) {
+    $result = true;
+  }
+  else{
+    $result = false;
+  }
+  return $result;
+}
+
+// For Product page
+function namedb($id){
+  require "./includes/dbh.product.inc.php";
+  $sql = "SELECT * FROM products WHERE proId='$id'";
+  $result = mysqli_query($conn, $sql);
+  while($row = mysqli_fetch_assoc($result)){
+    echo $row['proName'];
+  }
+}
+
+function descdb($id){
+  require "./includes/dbh.product.inc.php";
+  $sql = "SELECT * FROM products WHERE proId='$id'";
+  $result = mysqli_query($conn, $sql);
+  while($row = mysqli_fetch_assoc($result)){
+    echo $row['proDesc'];
+  }
+}
+
+function pricedb($id){
+  require "./includes/dbh.product.inc.php";
+  $sql = "SELECT * FROM products WHERE proId='$id'";
+  $result = mysqli_query($conn, $sql);
+  while($row = mysqli_fetch_assoc($result)){
+    echo $row['proPrice'];
+  }
+}
+
+function imgdb($id){
+  require "./includes/dbh.product.inc.php";
+  $sql = "SELECT * FROM products WHERE proId='$id'";
+  $result = mysqli_query($conn, $sql);
+  while($row = mysqli_fetch_assoc($result)){
+    echo '<img src="data:image;base64,'.base64_encode($row['proPic']).'" alt="product image">';
+  }
+}
+
+// For Order Page
+function orderdb($name){
+  require "./includes/dbh.product.inc.php";
+  // $sql = "SELECT * FROM products WHERE proName='$name'";
+  $sql = "SELECT * FROM products WHERE proName='$name'";
+  $result = mysqli_query($conn, $sql);
+  $resultCheck = mysqli_num_rows($result);
+  if($resultCheck > 0){
+    while($row = mysqli_fetch_assoc($result)){
+    return "gumagana <br>";
+    }
+  } else {
+    return "gumagana pero wala pa sa db";
+  }
+  
 }

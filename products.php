@@ -1,5 +1,6 @@
 <?php
   session_start();
+  require "./includes/functions.inc.php"
 ?>
 
 <!DOCTYPE html>
@@ -10,13 +11,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Qbyte Online Cake Shop</title>
-  <link rel="stylesheet" href="../css/index.css" type="text/css" />
-  <link rel="stylesheet" href="../css/variables.css" type="text/css" />
-  <link rel="stylesheet" href="../css/products.css" type="text/css" />
-  <link rel="stylesheet" href="../css/navbar.css" type="text/css" />
+  <link rel="stylesheet" href="./css/index.css" type="text/css" />
+  <link rel="stylesheet" href="./css/variables.css" type="text/css" />
+  <link rel="stylesheet" href="./css/products.css" type="text/css" />
+  <link rel="stylesheet" href="./css/navbar.css" type="text/css" />
 </head>
 <?php
-  include "../header.php";
+  include "./includes/header.inc.php";
 ?>
 <div class="cart">
   <div class="uppercart">
@@ -45,7 +46,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Cheesecake Truffles/truffles assorted.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Cheesecake Truffles/truffles assorted.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               6 pcs Meringue kisses coated with classic French buttercream
@@ -68,7 +69,7 @@
         </div>
 
         <div>
-          <img class="product-pic" src="../img/Cheesecake Truffles/truffles assorted1.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Cheesecake Truffles/truffles assorted1.jpg" alt="Cheesecake Truffles" />
         </div>
         <div class="productdescorder">
           <p>
@@ -90,7 +91,7 @@
         </div>
 
         <div>
-          <img class="product-pic" src="../img/Cheesecake Truffles/truffles assorted2.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Cheesecake Truffles/truffles assorted2.jpg" alt="Cheesecake Truffles" />
         </div>
         <div class="productdescorder">
           <p>
@@ -120,7 +121,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Cheesecakes/blueberry 6x2.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Cheesecakes/blueberry 6x2.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               6" x 2" Round Inspired Flan, Cheesecake, Ice Cream & Yogurt
@@ -143,7 +144,7 @@
         </div>
 
         <div>
-          <img class="product-pic" src="../img/Cheesecakes/Dulce de leche 6x2.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Cheesecakes/Dulce de leche 6x2.jpg" alt="Cheesecake Truffles" />
         </div>
         <div class="productdescorder">
           <p>
@@ -164,7 +165,7 @@
         </div>
 
         <div>
-          <img class="product-pic" src="../img/Cheesecakes/Mango 6x2.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Cheesecakes/Mango 6x2.jpg" alt="Cheesecake Truffles" />
         </div>
         <div class="productdescorder">
           <p>
@@ -185,7 +186,7 @@
         </div>
 
         <div>
-          <img class="product-pic" src="../img/Cheesecakes/Oreo 6x2.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Cheesecakes/Oreo 6x2.jpg" alt="Cheesecake Truffles" />
         </div>
         <div class="productdescorder">
           <p>
@@ -206,7 +207,7 @@
         </div>
 
         <div>
-          <img class="product-pic" src="../img/Cheesecakes/Strawberry 6x2.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Cheesecakes/Strawberry 6x2.jpg" alt="Cheesecake Truffles" />
         </div>
         <div class="productdescorder">
           <p>
@@ -227,7 +228,7 @@
         </div>
 
         <div>
-          <img class="product-pic" src="../img/Cheesecakes/Triple Choco 6x2.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Cheesecakes/Triple Choco 6x2.jpg" alt="Cheesecake Truffles" />
         </div>
         <div class="productdescorder">
           <p>
@@ -248,7 +249,7 @@
         </div>
 
         <div>
-          <img class="product-pic" src="../img/Cheesecakes/Ube 6x2.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Cheesecakes/Ube 6x2.jpg" alt="Cheesecake Truffles" />
         </div>
         <div class="productdescorder">
           <p>
@@ -277,7 +278,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Crema Flado/Blueberry CF.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Crema Flado/Blueberry CF.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               6" x 2" Round Inspired Flan, Cheesecake, Ice Cream & Yogurt
@@ -298,7 +299,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Crema Flado/Classic CF.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Crema Flado/Classic CF.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               6" x 2" Round Inspired Flan, Cheesecake, Ice Cream & Yogurt
@@ -319,7 +320,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Crema Flado/Mango CF0.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Crema Flado/Mango CF0.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               6" x 2" Round Inspired Flan, Cheesecake, Ice Cream & Yogurt
@@ -340,7 +341,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Crema Flado/Matcha CF.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Crema Flado/Matcha CF.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               6" x 2" Round Inspired Flan, Cheesecake, Ice Cream & Yogurt
@@ -361,7 +362,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Crema Flado/Strawberry CF.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Crema Flado/Strawberry CF.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               6" x 2" Round Inspired Flan, Cheesecake, Ice Cream & Yogurt
@@ -382,7 +383,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Crema Flado/Ube CF.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Crema Flado/Ube CF.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               6" x 2" Round Inspired Flan, Cheesecake, Ice Cream & Yogurt
@@ -411,7 +412,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Gourmet Gems/asstd.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Gourmet Gems/asstd.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>A jar full of assorted Gourmet Gems</p>
           </div>
@@ -430,7 +431,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Gourmet Gems/brownies.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Gourmet Gems/brownies.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>A jar full of Brownies Gourmet Gems</p>
           </div>
@@ -449,7 +450,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Gourmet Gems/brownies2.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Gourmet Gems/brownies2.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>A box full of Brownies</p>
           </div>
@@ -468,7 +469,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Gourmet Gems/choco crinkles.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Gourmet Gems/choco crinkles.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>A jar full of Chocolate Crinkles</p>
           </div>
@@ -487,7 +488,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Gourmet Gems/gems.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Gourmet Gems/gems.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>A jar full of Chocolate Gems</p>
           </div>
@@ -506,7 +507,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Gourmet Gems/gems1.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Gourmet Gems/gems1.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>A jar full of Brown Gems</p>
           </div>
@@ -525,7 +526,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Gourmet Gems/gourmet gems.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Gourmet Gems/gourmet gems.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>A jar full of Crinkles Gems</p>
           </div>
@@ -552,7 +553,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Ice Cream Cakes 12oz/caramel cashew.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Ice Cream Cakes 12oz/caramel cashew.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>12 oz Caramel Cashew Ice Cream Cake</p>
           </div>
@@ -571,7 +572,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Ice Cream Cakes 12oz/choco brownie.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Ice Cream Cakes 12oz/choco brownie.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>12 oz Chocolate Brownie Ice Cream Cake</p>
           </div>
@@ -590,7 +591,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Ice Cream Cakes 12oz/cookies and cream.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Ice Cream Cakes 12oz/cookies and cream.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>12 oz Cookies and Cream Ice Cream Cake</p>
           </div>
@@ -609,7 +610,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Ice Cream Cakes 12oz/Mango graham1.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Ice Cream Cakes 12oz/Mango graham1.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>12 oz Mango Graham Ice Cream Cake</p>
           </div>
@@ -628,7 +629,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Ice Cream Cakes 12oz/vanilla.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Ice Cream Cakes 12oz/vanilla.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>12 oz Vanilla Ice Cream Cake</p>
           </div>
@@ -655,7 +656,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Ice Cream Cakes Tin Can/caramel cashew.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Ice Cream Cakes Tin Can/caramel cashew.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>Caramel Cashew Ice Cream Cake on a tin can</p>
           </div>
@@ -674,7 +675,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Ice Cream Cakes Tin Can/Choco Brownie.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Ice Cream Cakes Tin Can/Choco Brownie.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>Choco Brownie Ice Cream Cake on a tin can</p>
           </div>
@@ -693,7 +694,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Ice Cream Cakes Tin Can/cookies and cream.jpg"
+          <img class="product-pic" src="./img/Ice Cream Cakes Tin Can/cookies and cream.jpg"
             alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>Cookies and Cream Ice Cream Cake on a tin can</p>
@@ -713,7 +714,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Ice Cream Cakes Tin Can/Mango Graham.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Ice Cream Cakes Tin Can/Mango Graham.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>Mango Graham Ice Cream Cake on a tin can</p>
           </div>
@@ -732,7 +733,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Ice Cream Cakes Tin Can/vanilla.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Ice Cream Cakes Tin Can/vanilla.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>Vanilla Ice Cream Cake on a tin can</p>
           </div>
@@ -759,7 +760,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Sans Rival Cakes/Classic 9x4.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Sans Rival Cakes/Classic 9x4.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               Layers of nutty meringue, chocolate French buttercream, and
@@ -781,7 +782,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Sans Rival Cakes/Double Choco 9x4.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Sans Rival Cakes/Double Choco 9x4.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               Layers of nutty meringue, chocolate French buttercream, and
@@ -803,7 +804,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Sans Rival Cakes/Mocha 9x4.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Sans Rival Cakes/Mocha 9x4.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               Layers of nutty meringue, chocolate French buttercream, and
@@ -825,7 +826,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Sans Rival Cakes/Red Velvet 9x4.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Sans Rival Cakes/Red Velvet 9x4.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               Layers of nutty meringue, chocolate French buttercream, and
@@ -847,7 +848,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Sans Rival Cakes/Ube 9x4.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Sans Rival Cakes/Ube 9x4.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               Layers of nutty meringue, chocolate French buttercream, and
@@ -877,7 +878,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Sansribars/Choco Cashew.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Sansribars/Choco Cashew.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               Layers of nutty meringue, chocolate French buttercream, and
@@ -898,7 +899,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Sansribars/Classic.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Sansribars/Classic.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               Layers of nutty meringue, chocolate French buttercream, and
@@ -919,7 +920,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Sansribars/Double Choco.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Sansribars/Double Choco.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               Layers of nutty meringue, chocolate French buttercream, and
@@ -940,7 +941,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Sansribars/Mocha.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Sansribars/Mocha.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               Layers of nutty meringue, chocolate French buttercream, and
@@ -961,7 +962,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Sansribars/Red Velvet.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Sansribars/Red Velvet.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               Layers of nutty meringue, chocolate French buttercream, and
@@ -982,7 +983,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Sansribars/Ube.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Sansribars/Ube.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               Layers of nutty meringue, chocolate French buttercream, and
@@ -1012,7 +1013,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Silvanas Gems/asstd.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Silvanas Gems/asstd.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               10 pcs Meringue kisses coated with classic French
@@ -1036,7 +1037,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Silvanas Gems/butternut.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Silvanas Gems/butternut.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               10 pcs Meringue kisses coated with classic French
@@ -1060,7 +1061,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Silvanas Gems/coffee.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Silvanas Gems/coffee.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               10 pcs Meringue kisses coated with classic French
@@ -1092,7 +1093,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/SIlvanas Sandwich/butternut.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/SIlvanas Sandwich/butternut.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               Meringue kisses coated with classic French buttercream
@@ -1114,7 +1115,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/SIlvanas Sandwich/coffee series.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/SIlvanas Sandwich/coffee series.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               Meringue kisses coated with classic French buttercream
@@ -1145,7 +1146,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Specialty Cakes/Choco Medley 7x4.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Specialty Cakes/Choco Medley 7x4.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               Layers of moist chocolate cake, dark chocolate buttercream &
@@ -1166,7 +1167,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Specialty Cakes/Choco Medley 9x4.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Specialty Cakes/Choco Medley 9x4.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               Layers of moist chocolate cake, dark chocolate buttercream &
@@ -1188,7 +1189,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Specialty Cakes/Duo Medley1.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Specialty Cakes/Duo Medley1.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               Layers of moist chocolate cake, dark chocolate buttercream &
@@ -1209,7 +1210,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Specialty Cakes/red velvet medley closeup.jpg"
+          <img class="product-pic" src="./img/Specialty Cakes/red velvet medley closeup.jpg"
             alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
@@ -1231,7 +1232,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Specialty Cakes/salted caramel closeup.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Specialty Cakes/salted caramel closeup.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>
               Layers of moist chocolate cake, dark chocolate buttercream &
@@ -1261,7 +1262,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Valentines SE products/BB heart.JPG" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Valentines SE products/BB heart.JPG" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>Blueberry Heart Cake perfect for Valentine date</p>
           </div>
@@ -1279,7 +1280,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Valentines SE products/cake3.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Valentines SE products/cake3.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>Love You Cake perfect for Valentine date</p>
           </div>
@@ -1297,7 +1298,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Valentines SE products/ily.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Valentines SE products/ily.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>I Love You Cake perfect for Valentine date</p>
           </div>
@@ -1315,7 +1316,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Valentines SE products/ombre cake.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Valentines SE products/ombre cake.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>Ombre Cake perfect for Valentine date</p>
           </div>
@@ -1333,7 +1334,7 @@
         </div>
 
         <div class="picwidth">
-          <img class="product-pic" src="../img/Valentines SE products/ombre cake.jpg" alt="Cheesecake Truffles" />
+          <img class="product-pic" src="./img/Valentines SE products/ombre cake.jpg" alt="Cheesecake Truffles" />
           <div class="productdescorder">
             <p>Strawberry Heart Cake perfect for Valentine date</p>
           </div>
@@ -1349,6 +1350,6 @@
 </div>
 <footer class="footer"></footer>
 </body>
-<script src="../js/products.js"></script>
+<script src="./js/products.js"></script>
 
 </html>

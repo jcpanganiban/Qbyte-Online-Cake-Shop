@@ -10,35 +10,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="../css/variables.css" type="text/css" />
-  <link rel="stylesheet" href="../css/navbar.css" type="text/css" />
-  <link rel="stylesheet" href="../css/profile.css" type="text/css" />
+  <link rel="stylesheet" href="./css/variables.css" type="text/css" />
+  <link rel="stylesheet" href="./css/navbar.css" type="text/css" />
+  <link rel="stylesheet" href="./css/profile.css" type="text/css" />
 </head>
 <?php
-  include "../header.php";
+  include "./includes/header.inc.php";
 ?>
 <div class="bg-img">
   <div class="account-content">
     <div class="upper-content">
       <div class="back-button">
-        <img src="../img/icons/back-icon.svg" alt="back-icon" />
+        <img src="./img/icons/back-icon.svg" alt="back-icon" />
       </div>
       <h1>Hero Header</h1>
       <div class="user-icon">
-        <img src="../img/icons/user-icon.svg" alt="user-icon" />
+        <img src="./img/icons/user-icon.svg" alt="user-icon" />
       </div>
     </div>
     <div class="main-content">
       <div class="display-name">
         <div class="displaycontent">
+          <!-- <form action="" method="post"></form> -->
           <div class="textdisplay">
             <label id="displaylabel">DISPLAY NAME</label>
+
             <?php
               if (isset($_SESSION['useremail'])){
-                echo '<span id="display">'.$_SESSION['username'].'</span>';
+                // echo '<span id="display">'.$_SESSION['username'].'</span>';
+                echo '<input type="text" name="name" id="display" value="' . $_SESSION['username'] . '" readonly>';
               }
               else{
-                echo '<span id="display">AWIT LODS</span>';
+                echo '<span id="display">Name</span>';
               }
             ?>
 
@@ -55,7 +58,7 @@
                 echo '<span id="display">'.$_SESSION['usercontact'].'</span>';
               }
               else{
-                echo '<span id="display">AWIT LODS</span>';
+                echo '<span id="display">Contact Number</span>';
               }
             ?>
           </div>
@@ -72,7 +75,7 @@
                 echo '<span id="display">'.$_SESSION['useremail'].'</span>';
               }
               else{
-                echo '<span id="display">AWIT LODS</span>';
+                echo '<span id="display">Email Address</span>';
               }
             ?>
           </div>
@@ -83,7 +86,7 @@
       <div class="display-name">
         <div class="displaycontent">
           <div class="textdisplay">
-            <span id="display">PASSWORD</span>
+            <span id="display">Password </span>
           </div>
 
           <button id="edit-password" class="edit-btn">EDIT</button>

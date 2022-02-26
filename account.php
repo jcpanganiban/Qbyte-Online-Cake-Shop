@@ -10,12 +10,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="../css/variables.css" type="text/css" />
-  <link rel="stylesheet" href="../css/navbar.css" type="text/css" />
-  <link rel="stylesheet" href="../css/account.css" type="text/css" />
+  <link rel="stylesheet" href="./css/variables.css" type="text/css" />
+  <link rel="stylesheet" href="./css/navbar.css" type="text/css" />
+  <link rel="stylesheet" href="./css/account.css" type="text/css" />
 </head>
 <?php
-  include "../header.php";
+  include "./includes/header.inc.php";
 ?>
 <div class="bg-img">
   <div class="hero-header">
@@ -35,7 +35,7 @@
     </div>
     <!-- Login -->
     <div class="login-signup-container">
-      <form id="LoginForm" action="../includes/login.inc.php" method="POST">
+      <form id="LoginForm" action="./includes/login.inc.php" method="POST">
         <div class="login-form">
           <div class="email-address">
             <label for="email" class="email">Email Address</label>
@@ -46,11 +46,11 @@
             <input type="password" name="password" />
           </div>
           <button type="submit" class="btn" name="submit">Login</button>
-          <p>Dont have an account? <a href="#">Forgot Passoword</a></p>
+          <p><a href="./resetpassword.php">Forgot your password?</a></p>
         </div>
       </form>
       <!-- Signup -->
-      <form id="RegForm" action="../includes/signup.inc.php" method="POST">
+      <form id="RegForm" action="./includes/signup.inc.php" method="POST">
         <div class="signup-form">
           <div class="display-name">
             <label for="name" class="name">Name</label>
@@ -142,7 +142,14 @@
         echo "<script> window.location.href='./account.php';</script>";
         die();
       }
-
+      
+      // For reset
+      else if ($_GET['error'] === "noneandpwdupdated"){
+        echo "<script>window.alert('You have successfully updated your password!')</script>";
+        echo "<script> window.location.href='./account.php';</script>";
+        die();
+      }
+      
       
       // No errors
       else if ($_GET['error'] === "none"){
@@ -150,9 +157,9 @@
         echo "<script> window.location.href='./account.php';</script>";
         die();
       }
-    }
-    else{
+
       
+
     }
   ?>
 
@@ -161,6 +168,6 @@
 <footer class="footer"></footer>
 </div>
 </body>
-<script src="../js/account.js"></script>
+<script src="./js/account.js"></script>
 
 </html>
